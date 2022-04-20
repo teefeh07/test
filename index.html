@@ -9,5 +9,33 @@
 <body>
     <h1>Hello World!!!</h1>
     <p>This is a paragraph tag</p>
+    <p id="demo">Hello World</p>
+    <button onclick="changeContent()">Change Content</button>
+    <br/><br/>
+    <p id="sample">Hello World</p>
+    <button onclick="changeStyle();">Change Styles</button>
+    <br/><br/>
+    <p id="first">Hello</p>
+    <button onclick="show()">Show</button>
+    <button onclick="hide()">Hide</button>
+    <script>
+        function changeContent(){
+            document.getElementById("demo").innerHTML="Hi World"
+        }
+
+        function changeStyle(){
+            document.getElementById("sample").style.fontSize = "50px";
+            document.getElementById("sample").style.color = "red";
+            document.getElementById("sample").style.backgroundColor = "blue"
+        }
+
+        function show() {
+            document.getElementById("first").style.display ="block" 
+        }
+        function hide(){
+            document.getElementById("first").style.display ="none"
+        }
+
+    </script>
 </body>
 </html>
